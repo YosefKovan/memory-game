@@ -61,11 +61,9 @@ def play_game(game_data):
 
 def game_manager():
 
-    game_over = False
-    while not game_over:
-        size = player_init_input()
-        game_data = game_init(size, 10)
-        play_game(game_data)
+    size = player_init_input()
+    game_data = game_init(size, 10)
+    play_game(game_data)
 
 
 
