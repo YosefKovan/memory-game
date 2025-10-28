@@ -5,6 +5,7 @@ def get_random_point(size):
     col = random.randrange(size)
     return row, col
 
+
 def shuffle_matrix(matrix, size):
 
     max_shuffle = 1000
@@ -22,6 +23,7 @@ def shuffle_matrix(matrix, size):
 
     return matrix
 
+
 def create_hidden_matrix(size):
     """this will create a matrix will all the hidden numbers"""
 
@@ -38,9 +40,11 @@ def create_hidden_matrix(size):
 
     return matrix
 
+
 def create_revealed_matrix(size):
     """this will create the revealed matrix"""
-    return [['o' for col in range(size)] for row in range(size)]
+    return [['x' for col in range(size)] for row in range(size)]
+
 
 def create_shuffled_matrix(size):
     return shuffle_matrix(create_hidden_matrix(size), size)
